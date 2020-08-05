@@ -1,0 +1,23 @@
+{
+  "name": "with-next-translate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next-translate && next dev",
+    "build": "next-translate && next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@next/bundle-analyzer": "^9.5.1",
+    "next": "^9.5.1",
+    "next-translate": "^0.17.1",
+    "react": "^16.13.1",
+    "react-cookie": "^4.0.3",
+    "react-dom": "^16.13.1"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "allLanguages": ["en", "de", "fr"],
+  "defaultLanguage": "en",
+  "currentPagesDir": "pages_",
+  "finalPagesDir": "pages",
+  "localesPath": "locales",
+  "ignoreRoutes": ["/_next/", "/static/", "/favicon.ico", "/manifest.json", "/robots.txt", "/_error"],
+  "pages": {
+    "*": ["common"]
+  }
+}
