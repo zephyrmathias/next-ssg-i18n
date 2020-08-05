@@ -1,7 +1,7 @@
 import useTranslation from 'next-translate/useTranslation'
 import Link from 'next-translate/Link'
 
-function AboutUs() {
+function AboutUs({ hello }) {
   const { t } = useTranslation()
 
   return (
@@ -11,8 +11,18 @@ function AboutUs() {
       <Link href="/" passHref>
         <a>homepage</a>
       </Link>
+      <div>{hello}</div>
     </div>
   )
+}
+
+export async function getStaticProps() {
+  return {
+    props: {
+      hello: Date.now(),
+    },
+    revalidate: 10,
+  }
 }
 
 export default AboutUs
