@@ -5,11 +5,10 @@ orbs:
 
 jobs:
   lint:
-    docker:
-      - image: 'cimg/base:stable'
+    executor: node/default
     steps:
       - checkout
-      - node/install
+      - node/install-packages
       - run: npm run lint
 
 workflows:
