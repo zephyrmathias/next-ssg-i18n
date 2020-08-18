@@ -3,7 +3,17 @@ version: 2.1
 orbs:
   node: circleci/node@4.0.0
 
+jobs:
+  lint:
+    docker:
+      - image: 'cimg/base:stable'
+    steps:
+      - checkout
+      - node/install
+      - run: npm run lint
+
 workflows:
   node-tests:
     jobs:
       - node/test
+      - lint
