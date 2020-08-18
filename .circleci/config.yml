@@ -6,4 +6,5 @@ orbs:
 workflows:
   node-tests:
     jobs:
-      - npm run test
+      - node/test:
+          version: 12.13.1
